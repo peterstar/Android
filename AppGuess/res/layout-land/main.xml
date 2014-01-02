@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView 
+        android:id="@+id/question" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"         
+        android:text="@string/question" />
+    
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/input_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input"
+        android:layout_alignTop="@+id/input"
+        android:layout_toRightOf="@+id/input"
+        android:paddingLeft="10dp"
+        android:text="Guess it!" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:layout_marginTop="16dp"
+        android:text="@string/result" />
+
+</RelativeLayout>
